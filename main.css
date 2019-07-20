@@ -3,12 +3,24 @@ body, html {
     height: 100%
 }
 
+h1{
+    text-align: center;
+    left: 50%;
+    font-family: Verdana;
+    
+}
+
 .header-content{
     width: auto;
     height: 10%;
     background-color: white;
-        
-    border-bottom: 2px solid black;
+    border-radius: 22px;     
+    border-bottom: 3.5px solid black;
+    -moz-box-shadow:2px 6px 5px silver;
+    -webkit-box-shadow:2px 6px 5px silver;
+    box-shadow : 0 5px 10px silver outset;
+    margin-bottom: 15px;
+    
 }
 
 .link-index{
@@ -16,24 +28,37 @@ body, html {
     height: auto;
 }
 
-.logo{
-    margin: 10px 0 0 20px;
-    float: left;
-    
-}
-
 .right{
     font-size: 20px;
     float: right;
+    margin: 15px 480px 0 0;
+    font-size: 36px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 1000;
    
-    
     
 }
 
 .nav{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 100%;
+}
+
+.mainbox{
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: 260%;
+    
+    margin-left: 10%;
+    border-left: 3px solid black; 
+    border-right: 3px solid black; 
+    position: absolute;
+}
+
+.positions{
+    border-bottom: 2px dashed black;
+    margin-top: 5%;
 }
 
 .button-left{
@@ -54,4 +79,83 @@ body, html {
 .preview{
     transform: rotate(90);
     margin: 16% 0 0 20%;
+}
+
+.back-home{
+    margin: 0 0 0 30px;
+    float: left;
+    font-size: 60px;
+    font-family: 'Bahianita', cursive;
+    text-decoration: none;
+    color: teal;
+}
+
+.back-home, .a:visited{
+    color: teal;
+}
+
+.list-style{
+    list-style: none;
+    display: block;
+    margin:300px 0 0 150px;
+}
+
+.reflection{
+    display: block;
+    text-decoration: none;
+    background-color:black;
+    width: calc(100% - 200px);
+    display: block;
+    color: white;
+    border-radius: 26px;
+    text-align: center;
+    font-size: 30px;
+    padding: 8px;
+    margin-left: -60px;
+    position: absolute;
+    border: 2px solid white;
+    cursor: pointer;
+    
+}
+
+.info{
+    border: 2px solid black;
+    padding: 80px;
+    margin-top: -150px; 
+    width: 50%;
+    position: absolute;
+    color: black;
+    font-family: Verdana;
+    font-size: 18px;
+}
+   
+.reflection-git{
+    margin: 20px 200px 0 200px;
+    font-family: Courier;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.homepage-w{
+    
+    margin: 0 0 0 25%;
+     
+}
+
+.title{
+    margin: 0 0 10% 42%;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.margin{
+    margin-top: 10%;
+}
+
+.reflection:hover{
+    transition: all 200ms linear;
+    opacity: .85;
+    background-color: white;
+    color:black;
+    border: 2px dashed black;
 }
