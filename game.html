@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<link rel = "stylesheet" type = "text/css" href = "main.css" />
+<link href="https://fonts.googleapis.com/css?family=Bahianita|Muli&display=swap" rel="stylesheet">
+<html lang="en-US">
+    <head>
+        <title>Guess a number</title>
+    </head>
+
+    <body>
+
+        <script src='main.js'></script>
+
+        <header class="header-content"> 
+            <nav class="link-index">
+                <a href="index.html" class="back-home"> Blog </a>
+            </nav>
+            <p class="right"> IXXN221 Web design blog</p>
+        </header>
+
+        
+            <div class='input' id='reset'>
+                <!-- <label>Colour: <input type='text' id='colour'/></label> -->
+                <button type='button' onclick='chooseNum()'>Guess a number</button>
+                <button type='button' onclick='compareNum();count();'>Test guess</button>
+                <button type='reset' value='reset'>Reset</button> 
+                <h3 id='result'></h3>
+            </div>
+        
+
+        <div class='triesZone'>
+             <h2>Tries Zone</h2>
+             <h3 id='triesZone'></h3>
+        </div>
+
+        <div class='closenessZone'>
+            <h2>Cloeseness Zone</h2>
+            <h3 id='closenessZone'></h3>
+        </div>
+        
+
+    </body>
+</html>
