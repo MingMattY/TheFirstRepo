@@ -28,15 +28,13 @@ h1{
     height: auto;
 }
 
-.right{
+.right,.reflectiontitle{
     font-size: 20px;
     float: right;
     margin: 15px 480px 0 0;
     font-size: 36px;
     font-family: 'Muli', sans-serif;
     font-weight: 1000;
-   
-    
 }
 
 .nav{
@@ -171,14 +169,14 @@ h1{
 .input{
     position: absolute;
     margin: auto;
-    left: 40%;
+    left: 36%;
     top: 20%;
 }
 
 .triesZone {
     position: relative;
     float: left;
-    left: 10%;
+    left: 12%;
     top: -2%;
 }
 
@@ -203,3 +201,185 @@ h1{
     color:black;
     border: 2px dashed black;
 }
+
+@media (max-width: 769px){
+    .right{
+        margin-right: 200px;
+        font-size: 26px;
+    }
+    
+    .game{
+    text-decoration: none;
+    background-color:black;
+    width: calc(100% - 100px);
+    display: block;
+    color: white;
+    border-radius: 26px;
+    text-align: center;
+    font-size: 30px;
+    padding: 8px;
+    margin-left: -100px;
+    margin-top: -120px;
+    position: absolute;
+    border: 2px solid white;
+    cursor: pointer;
+    }
+
+    .reflection{
+    text-decoration: none;
+    background-color:black;
+    width: calc(100% - 100px);
+    display: block;
+    color: white;
+    border-radius: 26px;
+    text-align: center;
+    font-size: 30px;
+    padding: 8px;
+    margin-left: -100px;
+    position: absolute;
+    border: 2px solid white;
+    cursor: pointer;
+    }
+
+    .preview{
+        margin-left: 150px;
+        width: 50%;
+        height: 30%;
+    }
+
+    .info{
+        border: 2px solid black;
+        padding: 80px;
+        margin-top: -50px; 
+        width: 50%;
+        position: absolute;
+        color: black;
+        font-family: Verdana;
+        font-size: 18px;
+    }
+
+    .reflectiontitle{
+        margin-right: 250px;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .title{
+        margin: 5% 0 10% 35%;
+    }
+
+    .reflection-git{
+        margin: 0 5% 0 5%;
+    }
+
+    .mainbox{
+        height: 3000px;
+    }
+
+    .input{
+        width: 200px;
+        left: 35%;
+        top: 20%;
+    }
+
+    #message{
+        padding: 0;
+    }
+}
+
+@media (max-width: 425px){
+    .right{
+        margin-top: 30px;
+        margin-right: 100px;
+        font-size: 16px;
+    }
+    
+    .game{
+    text-decoration: none;
+    background-color:black;
+    width: calc(100% - 10px);
+    display: block;
+    color: white;
+    border-radius: 26px;
+    text-align: center;
+    font-size: 30px;
+    padding: 8px;
+    margin-left: -150px;
+    margin-top: -120px;
+    position: absolute;
+    border: 2px solid white;
+    cursor: pointer;
+    }
+
+    .reflection{
+    text-decoration: none;
+    background-color:black;
+    width: calc(100% - 10px);
+    display: block;
+    color: white;
+    border-radius: 26px;
+    text-align: center;
+    font-size: 30px;
+    padding: 8px;
+    margin-left: -150px;
+    position: absolute;
+    border: 2px solid white;
+    cursor: pointer;
+    }
+
+    .preview{
+    margin-left: 80px;
+    width: 50%;
+    height: 30%;
+    }
+
+    .info{
+    border: 2px solid black;
+    padding: 30px;
+    margin-top: -40px;
+    margin-left: 50px; 
+    width: 50%;
+    position: absolute;
+    color: black;
+    font-family: Verdana;
+    font-size: 18px;
+    }
+
+    .reflectiontitle{
+        margin-right: 50px;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .title{
+        margin: 5% 0 10% 23%;
+    }
+
+    .reflection-git{
+        margin: 0 5% 0 5%;
+    }
+
+    .input{
+        left: 12%;
+        top: 15%;
+        width: auto;
+    }
+
+    .triesZone{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    }
+
+    .closenessZone{
+        position: absolute;
+        top: 23.5%;
+        left: 55%;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+}
+

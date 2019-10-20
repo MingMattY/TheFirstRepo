@@ -1,37 +1,35 @@
-function chooseNum(){
-    let randomNumber = document.getElementById("result").innerHTML = (`${Math.random()*100}`);
-    return randomNumber;
-}
+let count = 0;
+let randomNum = Math.floor(Math.random()*100);
 
-function count(){
-    let i = randomnumber;
-    i++;
-    let countNum = document.getElementById("triesZone").innerHTML = (i);
-    return countNum;
-}
+function processGuess(){
 
-function compareNum(){
+    let input = document.getElementById('guess').value
+    let gap = Math.abs(input - randomNum);
     
-    let randomNumber = document.getElementById("result").innerHTML = (`${Math.random()*100}`);
-
-    if(randomNumber > 50){
-        document.getElementById('closenessZone').innerHTML = (`Frezzing`);
-    } else if(randomNumber >= 20 && randomNumber <= 50){
-        document.getElementById('closenessZone').innerHTML = (`Cold`);
-    } else if(randomNumber >= 10 && randomNumber <= 19){
-        document.getElementById('closenessZone').innerHTML = (`Warm`);
-    } else if(randomNumber >= 5 && randomNumber <= 9){
-        document.getElementById('closenessZone').innerHTML = (`Hot`);
-    } else if(randomNumber <= 5){
-        document.getElementById('closenessZone').innerHTML = (`Boiling`);
-    } else if(randomNumber === randomNumber){
-        document.getElementById('closenessZone').innerHTML = (`Congratulations!`);
+    if(gap > 50){
+        document.getElementById('closenessZone').innerHTML = 'freezing'
+    } else if(gap > 20) {
+        document.getElementById('closenessZone').innerHTML = 'cold'
+    } else if(gap > 10){
+        document.getElementById('closenessZone').innerHTML = 'warm'
+    } else if(gap > 5){
+        document.getElementById('closenessZone').innerHTML = 'hot'
+    } else if(gap > 0){
+        document.getElementById('closenessZone').innerHTML = 'boiling'
+    } else {
+        document.getElementById('closenessZone').innerHTML = 'congratulations!'
     }
+
+    count++
+    document.getElementById('triesZone').innerHTML = `You have guessed ${count} times`
 }
 
-// * If the guess is more than 50 off print "Freezing" to the closeness zone
-// * If the guess is between 20-50 off print "Cold" to the closeness zone
-// * If the guess is between 10-19 off print "Warm" to the closeness zone
-// * If the guess is between 5-9 off pring "Hot" to the closeness zone
-// * If the guess is less than 5 off print "Boiling" to the closeness zone
-// * If the guess is correct then congratulate the user.
+function resetGame(){
+    randomNum = Math.floor(Math.random()*100);
+    document.getElementById('guess').value = ''
+    document.getElementById('closenessZone').innerHTML = ''
+
+    count = 0;
+
+    document.getElementById('triesZone').innerHTML = `You have guessed ${count} times <br> good luck`
+}
