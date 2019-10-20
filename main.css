@@ -169,7 +169,7 @@ h1{
 .input{
     position: absolute;
     margin: auto;
-    left: 36%;
+    left: 40%;
     top: 20%;
 }
 
@@ -184,6 +184,7 @@ h1{
     position: relative;
     float: right;
     right: 10%;
+    top: 10px;
 }
 
 .reflection:hover{
@@ -278,7 +279,7 @@ h1{
 
     .input{
         width: 200px;
-        left: 35%;
+        left: 38%;
         top: 20%;
     }
 
